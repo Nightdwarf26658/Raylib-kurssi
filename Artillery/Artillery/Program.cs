@@ -7,6 +7,16 @@ namespace Artillery
     {
         static void Main(string[] args)
         {
+            int[] pilars = new int[10];
+
+            Random rnd = new Random();
+
+            for (int i = 0; i < 10; i++) 
+            {
+                pilars[i] = rnd.Next(150);
+            }
+
+
             int width = 400;
             int height = 400;
             Vector2 A = new Vector2(width / 2, 0);
